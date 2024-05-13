@@ -5,4 +5,23 @@ const fromDollarToYen = (dolar) => {
     return yen;
 }
 
-module.exports = fromDollarToYen;
+const fromEuroToDollar = (euro) => {
+    
+    let dolar;
+    dolar =  euro * 1.08;
+    return dolar;
+}
+
+const fromYenToPound = (yen) => {
+    
+    let pound;
+    pound =  yen * 0.0051;
+    return pound;
+}
+
+
+module.exports = {
+    fromDollarToYen,
+    fromEuroToDollar,
+    fromYenToPound
+};
